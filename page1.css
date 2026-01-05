@@ -1,4 +1,7 @@
-/* Base styles for all screen sizes */
+body{
+    width: 97%;
+   
+}
 .container {
     display: flex;
     padding: 10px;
@@ -23,7 +26,8 @@
     gap: 5px;
 }
 
-.option, .option1 {
+.option,
+.option1 {
     display: flex;
     gap: 15px;
     align-items: center;
@@ -31,11 +35,22 @@
     float: right;
 }
 
-.option1:hover, .option2:hover, .option3:hover, .option4:hover, .option5:hover {
+.option1:hover,
+.option2:hover,
+.option3:hover,
+
+.option5:hover {
     border-bottom: 2px solid red;
     border-width: 4px;
     transform: translateY(-5px);
     transition: transform 0.3s ease;
+}
+
+.option4 span {
+    background: #3E54A3;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
 }
 
 .firstgit {
@@ -116,14 +131,16 @@
     color: rgb(105, 75, 252);
 }
 
-.aboutthinker1, .aboutthinker2 {
+.aboutthinker1,
+.aboutthinker2 {
     background-color: rgb(236, 239, 244);
     display: block;
     margin: 5%;
     padding: 5%;
 }
 
-.thinker1, .thinker2 {
+.thinker1,
+.thinker2 {
     height: 100px;
     width: 100px;
     border-radius: 100%;
@@ -131,7 +148,8 @@
     justify-self: center;
 }
 
-.thinkername, .thinkerBG {
+.thinkername,
+.thinkerBG {
     display: flex;
     justify-self: center;
 }
@@ -150,51 +168,87 @@
     padding-bottom: 20px;
 }
 
-.FEATURED-FIRST, .FEATURED-SECOND, .FEATURED-THIRD {
+.FEATURED-FIRST,
+.FEATURED-SECOND,
+.FEATURED-THIRD {
     display: flex;
     border: 2px solid rgb(173, 170, 170);
-    background-color: rgb(226, 230, 235);
-    width: 350px;
+    background-color: #fff;
+    width: 300px;
     border-radius: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.FEATURED-FIRST img,
+.FEATURED-SECOND img,
+.FEATURED-THIRD img {
+    width: 254px;
+    height: 50px;
 }
 
 .FEATURED-SECOND-SPAN {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.FEATURED-THIRD {
+/* .FEATURED-THIRD {
     display: flex;
     border: 2px solid rgb(173, 170, 170);
-    background-color: rgb(226, 230, 235);
+    background-color: #fff;
     width: 350px;
     border-radius: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: red;
     padding-left: 10px;
-}
+} */
 
 /* About Section */
-.ABOUT1, .ABOUT2, .ABOUT3, .ABOUT4, .ABOUT5 {
+.ABOUT1,
+.ABOUT2,
+.ABOUT3,
+.ABOUT4,
+.ABOUT5 {
     display: flex;
-    margin: 5%;
-    justify-content: space-between;
+    /* margin: 4%; */
+    justify-content: space-around;
+
+    /* align-items: center; */
+    padding: 52px;
+    gap: 50px;
+}
+
+.ABOUT1 p,
+.ABOUT2 p,
+.ABOUT3 p,
+.ABOUT4 p,
+.ABOUT5 p {
+    font-family: sans-serif;
+    line-height: 34px;
+    font-size: 19px;
+    color: #737373;
 }
 
 .IMG {
-    height: 300px;
+    height: 400px;
 }
 
 .icon {
     height: 40px;
 }
 
-.Escape, #Build, .Banish, .Create {
+.Escape,
+#Build,
+.Banish,
+.Create {
     height: 60px;
-    width: 500px;
+    width: 100%;
     display: block;
-    margin-left: 300px;
+    margin-top: 70px;
+    align-items: center;
 }
 
 .heading {
@@ -239,7 +293,10 @@
     margin-right: 10px;
 }
 
-.AboutCard1, .AboutCard2, .AboutCard3, .AboutCard4 {
+.AboutCard1,
+.AboutCard2,
+.AboutCard3,
+.AboutCard4 {
     background-color: rgb(199, 199, 199);
     height: 60px;
     width: 500px;
@@ -273,16 +330,21 @@
 }
 
 .pro {
-    background-color: blue;
+    background-color: #3E54A3;
     color: white;
     border-radius: 10px;
     display: inline;
+    padding: 5px 10px;
 }
 
 .subscription-paragraph {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  sans-serif;
     text-align: center;
     font-size: x-large;
+    width: 59%;
+    margin: 0 auto;
+    color: #737373;
+    font-size: 20px;
 }
 
 /* Challenge Section */
@@ -348,7 +410,13 @@
     gap: 50px;
 }
 
-.box1, .box2, .box3, .box4, .box5, .box6, .box7 {
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7 {
     background-color: rgb(208, 214, 214);
     height: 50px;
     width: 500px;
@@ -558,7 +626,8 @@
         gap: 20px;
     }
 
-    .aboutthinker1, .aboutthinker2 {
+    .aboutthinker1,
+    .aboutthinker2 {
         width: 100%;
     }
 }
@@ -574,7 +643,8 @@
         float: none;
     }
 
-    .firstCard, .secondCard {
+    .firstCard,
+    .secondCard {
         flex-direction: column;
         align-items: center;
         padding: 20px;
@@ -588,12 +658,15 @@
         width: 90%;
     }
 
-    .thirdgit, .secondgit {
+    .thirdgit,
+    .secondgit {
         width: 100%;
         padding: 10px;
     }
 
-    .FEATURED-FIRST, .FEATURED-SECOND, .FEATURED-THIRD {
+    .FEATURED-FIRST,
+    .FEATURED-SECOND,
+    .FEATURED-THIRD {
         width: 100%;
         padding: 10px;
     }
@@ -610,15 +683,21 @@
         gap: 5px;
     }
 
-    .thirdgit, .secondgit {
+    .thirdgit,
+    .secondgit {
         width: 100%;
     }
 
-    .ABOUT1, .ABOUT2, .ABOUT3, .ABOUT4, .ABOUT5 {
+    .ABOUT1,
+    .ABOUT2,
+    .ABOUT3,
+    .ABOUT4,
+    .ABOUT5 {
         flex-direction: column;
     }
 
-    .aboutthinker1, .aboutthinker2 {
+    .aboutthinker1,
+    .aboutthinker2 {
         width: 100%;
     }
 
